@@ -1,17 +1,17 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *Tipify*
 
-**Name of your app** is a tip calculator application for iOS.
+**Tipify** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: **Nicholas McDonald**
 
-Time spent: **X** hours spent in total
+Time spent: **\<1** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] Settings page to change the default tip percentage.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
 * [ ] UI animations
@@ -27,17 +27,17 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://imgur.com/a/XU6Yf' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+No issues other than had to change `sender` object in the `calculateTip` function from `Any` to `AnyObject`.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2016] [Nicholas McDonald]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
