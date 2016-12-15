@@ -6,6 +6,8 @@ Submitted by: **Nicholas McDonald**
 
 Time spent: **\<1** hours spent in total
 
+###Note: I am going to branch off master and spend more time implementing the optional features below as I get time to do so.
+
 ## User Stories
 
 The following **required** functionality is complete:
