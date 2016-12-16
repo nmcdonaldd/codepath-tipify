@@ -11,7 +11,9 @@ import UIKit
 class tipViewController: UIViewController {
 
     @IBOutlet weak var totalBillTextField: UITextField!
-    
+    @IBOutlet weak var scAndBillTFView: UIView!
+    @IBOutlet weak var tipSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var tipAndTotalContainerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +30,15 @@ class tipViewController: UIViewController {
         totalBillTextField.becomeFirstResponder()
     }
     
+    @IBAction func calculateTip(_ sender: AnyObject) {
+        
+        if totalBillTextField.text != "" {
+            self.tipSegmentedControl.isHidden = false
+            self.tipAndTotalContainerView.isHidden = false
+        } else {
+            
+        }
+    }
 
     /*
     // MARK: - Navigation
