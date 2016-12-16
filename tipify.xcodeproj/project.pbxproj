@@ -78,6 +78,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D51DD7411E04B4FF00174671 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				D58706821E0354300069322E /* tipAppFeatures.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		D51DD7431E04B51C00174671 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D51DD7441E04B51F00174671 /* UI */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D51DD7441E04B51F00174671 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D58706861E0477520069322E /* tipViewController.swift */,
+				D5CADD641E031CB700A6B96B /* Main.storyboard */,
+				D5CADD691E031CB700A6B96B /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D51DD7451E04B53800174671 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D58706841E035DC60069322E /* tipKeyDefinitions.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D5CADD541E031CB700A6B96B = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +135,11 @@
 		D5CADD5F1E031CB700A6B96B /* tipify */ = {
 			isa = PBXGroup;
 			children = (
-				D58706821E0354300069322E /* tipAppFeatures.swift */,
 				D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */,
-				D58706841E035DC60069322E /* tipKeyDefinitions.swift */,
-				D58706861E0477520069322E /* tipViewController.swift */,
-				D5CADD641E031CB700A6B96B /* Main.storyboard */,
+				D51DD7431E04B51C00174671 /* Main */,
+				D51DD7411E04B4FF00174671 /* General */,
+				D51DD7451E04B53800174671 /* Supporting Files */,
 				D5CADD671E031CB700A6B96B /* Assets.xcassets */,
-				D5CADD691E031CB700A6B96B /* LaunchScreen.storyboard */,
 				D5CADD6C1E031CB800A6B96B /* Info.plist */,
 			);
 			path = tipify;
