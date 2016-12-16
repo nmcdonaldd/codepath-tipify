@@ -26,8 +26,8 @@ class tipViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardShown(notification:)), name: .UIKeyboardWillShow, object: nil)
 
         // Do any additional setup after loading the view.
-        self.tipAndTotalView.alpha = 0.0
-        self.tipSegmentedControl.alpha = 0.0
+        self.tipAndTotalView.alpha = CGFloat(tipHideAlpha)
+        self.tipSegmentedControl.alpha = CGFloat(tipHideAlpha)
     }
     
     func keyboardShown(notification: Notification) {
