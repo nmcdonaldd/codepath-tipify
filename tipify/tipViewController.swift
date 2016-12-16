@@ -35,7 +35,6 @@ class tipViewController: UIViewController {
         if !previousShownKeyboard {
             if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
                 self.tipAndTotalView.frame.origin.y = keyboardSize.minY - keyboardSize.height
-                print("Origin.y: \(self.tipAndTotalView.frame.origin.y)")
             }
         }
         
@@ -60,9 +59,9 @@ class tipViewController: UIViewController {
             return
         }
         
-        let alphasForViews:CGFloat = isText ? 1.0 : 0.0
-        let deltaYForContainer: CGFloat = isText ? 175 : -175
-        let deltaYforscAndBillTFView: CGFloat = isText ? 100 : -100
+        let alphasForViews:CGFloat = isText ? CGFloat(tipShownAlpha) : CGFloat(tipHideAlpha)
+        let deltaYForContainer: CGFloat = isText ? CGFloat(tipChangeInYForContainer) : CGFloat(tipChangeInYForContainer).negated()
+        let deltaYforscAndBillTFView: CGFloat = isText ? CGFloat(tipChangeInYForSCAndTF) : CGFloat(tipChangeInYForSCAndTF).negated()
         self.previousText = isText
         
         UIView.animate(withDuration: tipAnimationDuration, animations: { Void in
@@ -81,7 +80,7 @@ class tipViewController: UIViewController {
         
         self.animateViewsIfPreviousText()
         
-        let tipPercentages = [0.15, 0.2, 0.25]
+        let tipPercentages = [tipPercentage0, tipPercentage1, tipPercentage2]
         let billTotal = Double(self.totalBillTextField.text!) ?? 0
         let tip = billTotal*tipPercentages[self.tipSegmentedControl.selectedSegmentIndex]
         let total = billTotal + tip
