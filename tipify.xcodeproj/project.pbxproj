@@ -11,7 +11,6 @@
 		D58706851E035DC60069322E /* tipKeyDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706841E035DC60069322E /* tipKeyDefinitions.swift */; };
 		D58706871E0477520069322E /* tipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706861E0477520069322E /* tipViewController.swift */; };
 		D5CADD611E031CB700A6B96B /* tipAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */; };
-		D5CADD631E031CB700A6B96B /* tpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD621E031CB700A6B96B /* tpViewController.swift */; };
 		D5CADD661E031CB700A6B96B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CADD641E031CB700A6B96B /* Main.storyboard */; };
 		D5CADD681E031CB700A6B96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CADD671E031CB700A6B96B /* Assets.xcassets */; };
 		D5CADD6B1E031CB700A6B96B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CADD691E031CB700A6B96B /* LaunchScreen.storyboard */; };
@@ -42,7 +41,6 @@
 		D58706861E0477520069322E /* tipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tipViewController.swift; sourceTree = "<group>"; };
 		D5CADD5D1E031CB700A6B96B /* tipify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipAppDelegate.swift; sourceTree = "<group>"; };
-		D5CADD621E031CB700A6B96B /* tpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tpViewController.swift; sourceTree = "<group>"; };
 		D5CADD651E031CB700A6B96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5CADD671E031CB700A6B96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CADD6A1E031CB700A6B96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				D58706821E0354300069322E /* tipAppFeatures.swift */,
 				D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */,
 				D58706841E035DC60069322E /* tipKeyDefinitions.swift */,
-				D5CADD621E031CB700A6B96B /* tpViewController.swift */,
 				D58706861E0477520069322E /* tipViewController.swift */,
 				D5CADD641E031CB700A6B96B /* Main.storyboard */,
 				D5CADD671E031CB700A6B96B /* Assets.xcassets */,
@@ -274,7 +271,6 @@
 				D58706871E0477520069322E /* tipViewController.swift in Sources */,
 				D58706851E035DC60069322E /* tipKeyDefinitions.swift in Sources */,
 				D58706831E0354300069322E /* tipAppFeatures.swift in Sources */,
-				D5CADD631E031CB700A6B96B /* tpViewController.swift in Sources */,
 				D5CADD611E031CB700A6B96B /* tipAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

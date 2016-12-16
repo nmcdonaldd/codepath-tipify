@@ -13,14 +13,33 @@ class tipViewController: UIViewController {
     @IBOutlet weak var totalBillTextField: UITextField!
     @IBOutlet weak var scAndBillTFView: UIView!
     @IBOutlet weak var tipSegmentedControl: UISegmentedControl!
-    @IBOutlet weak var tipAndTotalContainerView: UIView!
+    
+    @IBOutlet weak var tipAndTotalView: UIView!
     private var previousText:Bool = false
+    private var previousShownKeyboard = false
+    
+    @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardShown(notification:)), name: .UIKeyboardWillShow, object: nil)
 
         // Do any additional setup after loading the view.
-        self.tipAndTotalContainerView.alpha = 0.0
+        self.tipAndTotalView.alpha = 0.0
         self.tipSegmentedControl.alpha = 0.0
+    }
+    
+    func keyboardShown(notification: Notification) {
+        
+        if !previousShownKeyboard {
+            if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                self.tipAndTotalView.frame.origin.y = keyboardSize.minY - keyboardSize.height
+                print("Origin.y: \(self.tipAndTotalView.frame.origin.y)")
+            }
+        }
+        
+        previousShownKeyboard = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +48,7 @@ class tipViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         // Make the textfield the first responder.
         totalBillTextField.becomeFirstResponder()
     }
@@ -41,21 +61,33 @@ class tipViewController: UIViewController {
         }
         
         let alphasForViews:CGFloat = isText ? 1.0 : 0.0
+        let deltaYForContainer: CGFloat = isText ? 175 : -175
+        let deltaYforscAndBillTFView: CGFloat = isText ? 100 : -100
         self.previousText = isText
         
-        print("Animating: \(alphasForViews)")
-        
-        UIView.animate(withDuration: 0.2, animations: { Void in
+        UIView.animate(withDuration: tipAnimationDuration, animations: { Void in
             
-            self.tipAndTotalContainerView.alpha = alphasForViews
-            self.tipAndTotalContainerView.alpha = alphasForViews
+            self.tipAndTotalView.alpha = alphasForViews
+            self.tipSegmentedControl.alpha = alphasForViews
+            
+            self.tipAndTotalView.frame.origin.y -= deltaYForContainer
+            self.scAndBillTFView.frame.origin.y -= deltaYforscAndBillTFView
             
         }, completion: nil)
         
     }
     
     @IBAction func calculateTip(_ sender: AnyObject) {
+        
         self.animateViewsIfPreviousText()
+        
+        let tipPercentages = [0.15, 0.2, 0.25]
+        let billTotal = Double(self.totalBillTextField.text!) ?? 0
+        let tip = billTotal*tipPercentages[self.tipSegmentedControl.selectedSegmentIndex]
+        let total = billTotal + tip
+        
+        self.totalLabel.text = String(format: "$%.2f", total)
+        self.tipLabel.text = String(format: "$%.2f", tip)
     }
 
     /*
