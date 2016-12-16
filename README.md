@@ -4,7 +4,7 @@
 
 Submitted by: **Nicholas McDonald**
 
-Time spent: **~3** hours spent in total
+Time spent: **~4** hours spent in total
 
 ###Note: I am going to branch off master and spend more time implementing the optional features below as I get time to do so.
 
