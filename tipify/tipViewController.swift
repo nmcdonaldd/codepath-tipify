@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class tipViewController: UIViewController {
 
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
