@@ -14,10 +14,13 @@ class tipViewController: UIViewController {
     @IBOutlet weak var scAndBillTFView: UIView!
     @IBOutlet weak var tipSegmentedControl: UISegmentedControl!
     @IBOutlet weak var tipAndTotalContainerView: UIView!
+    private var previousText:Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.tipAndTotalContainerView.alpha = 0.0
+        self.tipSegmentedControl.alpha = 0.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,14 +33,29 @@ class tipViewController: UIViewController {
         totalBillTextField.becomeFirstResponder()
     }
     
-    @IBAction func calculateTip(_ sender: AnyObject) {
+    private func animateViewsIfPreviousText() {
         
-        if totalBillTextField.text != "" {
-            self.tipSegmentedControl.isHidden = false
-            self.tipAndTotalContainerView.isHidden = false
-        } else {
-            
+        let isText = self.totalBillTextField.text != ""
+        if previousText && isText {
+            return
         }
+        
+        let alphasForViews:CGFloat = isText ? 1.0 : 0.0
+        self.previousText = isText
+        
+        print("Animating: \(alphasForViews)")
+        
+        UIView.animate(withDuration: 0.2, animations: { Void in
+            
+            self.tipAndTotalContainerView.alpha = alphasForViews
+            self.tipAndTotalContainerView.alpha = alphasForViews
+            
+        }, completion: nil)
+        
+    }
+    
+    @IBAction func calculateTip(_ sender: AnyObject) {
+        self.animateViewsIfPreviousText()
     }
 
     /*
