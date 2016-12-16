@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D58706831E0354300069322E /* AppFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706821E0354300069322E /* AppFeatures.swift */; };
+		D58706831E0354300069322E /* tipAppFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706821E0354300069322E /* tipAppFeatures.swift */; };
 		D58706851E035DC60069322E /* tipKeyDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706841E035DC60069322E /* tipKeyDefinitions.swift */; };
 		D5CADD611E031CB700A6B96B /* tipAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */; };
 		D5CADD631E031CB700A6B96B /* tipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD621E031CB700A6B96B /* tipViewController.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D58706821E0354300069322E /* AppFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFeatures.swift; sourceTree = "<group>"; };
+		D58706821E0354300069322E /* tipAppFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tipAppFeatures.swift; sourceTree = "<group>"; };
 		D58706841E035DC60069322E /* tipKeyDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tipKeyDefinitions.swift; sourceTree = "<group>"; };
 		D5CADD5D1E031CB700A6B96B /* tipify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipAppDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		D5CADD5F1E031CB700A6B96B /* tipify */ = {
 			isa = PBXGroup;
 			children = (
-				D58706821E0354300069322E /* AppFeatures.swift */,
+				D58706821E0354300069322E /* tipAppFeatures.swift */,
 				D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */,
 				D58706841E035DC60069322E /* tipKeyDefinitions.swift */,
 				D5CADD621E031CB700A6B96B /* tipViewController.swift */,
@@ -269,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58706851E035DC60069322E /* tipKeyDefinitions.swift in Sources */,
-				D58706831E0354300069322E /* AppFeatures.swift in Sources */,
+				D58706831E0354300069322E /* tipAppFeatures.swift in Sources */,
 				D5CADD631E031CB700A6B96B /* tipViewController.swift in Sources */,
 				D5CADD611E031CB700A6B96B /* tipAppDelegate.swift in Sources */,
 			);

@@ -54,9 +54,7 @@ class tipAppDelegate: UIResponder, UIApplicationDelegate {
         let prefs = UserDefaults.standard
         
         if (prefs.value(forKey: tipFirstTimeAppLaunch) == nil) {
-            
             prefs.set(true, forKey: tipFirstTimeAppLaunch)
-            
         }
     }
     
