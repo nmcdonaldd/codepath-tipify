@@ -20,6 +20,8 @@ class tipViewController: UIViewController {
     
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,12 +32,16 @@ class tipViewController: UIViewController {
         self.tipSegmentedControl.alpha = CGFloat(tipHideAlpha)
     }
     
+    
     func keyboardShown(notification: Notification) {
         
-        if !previousShownKeyboard {
-            if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-                self.tipAndTotalView.frame.origin.y = keyboardSize.minY - keyboardSize.height
-            }
+        // Early return if the keyboard was already shown - don't need to go through logic again.
+        guard !previousShownKeyboard else {
+            return
+        }
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            self.tipAndTotalView.frame.origin.y = keyboardSize.minY - keyboardSize.height
         }
         
         previousShownKeyboard = true
