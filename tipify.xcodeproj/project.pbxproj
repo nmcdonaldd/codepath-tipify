@@ -10,10 +10,10 @@
 		D58706831E0354300069322E /* tipAppFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706821E0354300069322E /* tipAppFeatures.swift */; };
 		D58706851E035DC60069322E /* tipKeyDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706841E035DC60069322E /* tipKeyDefinitions.swift */; };
 		D58706871E0477520069322E /* tipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706861E0477520069322E /* tipViewController.swift */; };
+		D59BB6151E09D21200CE4230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59BB6131E09D21200CE4230 /* LaunchScreen.storyboard */; };
+		D59BB6161E09D21200CE4230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59BB6141E09D21200CE4230 /* Main.storyboard */; };
 		D5CADD611E031CB700A6B96B /* tipAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */; };
-		D5CADD661E031CB700A6B96B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CADD641E031CB700A6B96B /* Main.storyboard */; };
 		D5CADD681E031CB700A6B96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CADD671E031CB700A6B96B /* Assets.xcassets */; };
-		D5CADD6B1E031CB700A6B96B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CADD691E031CB700A6B96B /* LaunchScreen.storyboard */; };
 		D5CADD761E031CB800A6B96B /* tipifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD751E031CB800A6B96B /* tipifyTests.swift */; };
 		D5CADD811E031CB800A6B96B /* tipifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD801E031CB800A6B96B /* tipifyUITests.swift */; };
 /* End PBXBuildFile section */
@@ -36,14 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D58706821E0354300069322E /* tipAppFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tipAppFeatures.swift; sourceTree = "<group>"; };
-		D58706841E035DC60069322E /* tipKeyDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tipKeyDefinitions.swift; sourceTree = "<group>"; };
-		D58706861E0477520069322E /* tipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tipViewController.swift; sourceTree = "<group>"; };
+		D58706821E0354300069322E /* tipAppFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipAppFeatures.swift; path = Classes/General/tipAppFeatures.swift; sourceTree = "<group>"; };
+		D58706841E035DC60069322E /* tipKeyDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipKeyDefinitions.swift; path = "Supporting Files/tipKeyDefinitions.swift"; sourceTree = "<group>"; };
+		D58706861E0477520069322E /* tipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipViewController.swift; path = Classes/UI/tipViewController.swift; sourceTree = "<group>"; };
+		D59BB6131E09D21200CE4230 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Classes/UI/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D59BB6141E09D21200CE4230 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Classes/UI/Main.storyboard; sourceTree = "<group>"; };
 		D5CADD5D1E031CB700A6B96B /* tipify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipify.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipAppDelegate.swift; sourceTree = "<group>"; };
-		D5CADD651E031CB700A6B96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = tipAppDelegate.swift; path = Classes/tipAppDelegate.swift; sourceTree = "<group>"; };
 		D5CADD671E031CB700A6B96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5CADD6A1E031CB700A6B96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5CADD6C1E031CB800A6B96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CADD711E031CB800A6B96B /* tipifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CADD751E031CB800A6B96B /* tipifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipifyTests.swift; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		D51DD7441E04B51F00174671 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D59BB6131E09D21200CE4230 /* LaunchScreen.storyboard */,
+				D59BB6141E09D21200CE4230 /* Main.storyboard */,
 				D58706861E0477520069322E /* tipViewController.swift */,
-				D5CADD641E031CB700A6B96B /* Main.storyboard */,
-				D5CADD691E031CB700A6B96B /* LaunchScreen.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -273,9 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CADD6B1E031CB700A6B96B /* LaunchScreen.storyboard in Resources */,
+				D59BB6161E09D21200CE4230 /* Main.storyboard in Resources */,
 				D5CADD681E031CB700A6B96B /* Assets.xcassets in Resources */,
-				D5CADD661E031CB700A6B96B /* Main.storyboard in Resources */,
+				D59BB6151E09D21200CE4230 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,25 +337,6 @@
 			targetProxy = D5CADD7D1E031CB800A6B96B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D5CADD641E031CB700A6B96B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5CADD651E031CB700A6B96B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D5CADD691E031CB700A6B96B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5CADD6A1E031CB700A6B96B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D5CADD831E031CB800A6B96B /* Debug */ = {
