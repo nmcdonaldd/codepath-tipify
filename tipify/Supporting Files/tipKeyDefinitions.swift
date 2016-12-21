@@ -24,7 +24,7 @@ let tipPercentage2 = 0.25
 let tipDefaultUserLocation = "United States"
 let tipLatestUserLocation = "tipLatestUserLocation"
 
-let locations = [
-                "United States": "$",
-                "United Kingdom" : "£"
-                ]
+let dollarSignsForCountry = [
+                            "United States": "$",
+                            "United Kingdom" : "£"
+                            ]
