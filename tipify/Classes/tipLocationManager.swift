@@ -25,6 +25,7 @@ class tipLocationManager: NSObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
+        NSLog("Starting to update user location")
         locationManager.startUpdatingLocation()
     }
     
@@ -32,7 +33,6 @@ class tipLocationManager: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {[weak self] (placemarks, error) in
-            
             // First, save battery by stop updating location.
             self?.locationManager.stopUpdatingLocation()
             
@@ -59,11 +59,14 @@ class tipLocationManager: NSObject, CLLocationManagerDelegate {
         // Write this latest location to UserDefaults.
         let country = pm.country!
         self.latestCountry = country
+        NSLog("Current country is %@", country)
         self.setLatestLocationAsDefault(location: country)
     }
     
     private func setLatestLocationOnError() {
-        self.latestCountry = self.getLatestLocationFromUserDefaults()
+        let country = self.getLatestLocationFromUserDefaults()
+        NSLog("Error: setting current location to default - %@", country)
+        self.latestCountry = country
     }
     
     
@@ -72,19 +75,10 @@ class tipLocationManager: NSObject, CLLocationManagerDelegate {
     private func setUpUserDefaults() {
         // If the default value hasn't been setup for location, set it up here.
         let prefs = UserDefaults.standard
-        if isKeyInUserDefaultsValid(key: tipLatestUserLocation) {
+        if !isKeyInUserDefaultsValid(key: tipLatestUserLocation) {
             prefs.set(tipDefaultUserLocation, forKey: tipLatestUserLocation)
+            prefs.synchronize()
         }
-    }
-    
-    private func setLatestLocationAsDefault(location: String) {
-        let prefs = UserDefaults.standard
-        prefs.set(location, forKey: tipLatestUserLocation)
-    }
-    
-    private func getLatestLocationFromUserDefaults() -> String {
-        let prefs = UserDefaults.standard
-        return prefs.value(forKey: tipLatestUserLocation) as! String
     }
     
     private func isKeyInUserDefaultsValid(key: String) -> Bool {
@@ -92,10 +86,26 @@ class tipLocationManager: NSObject, CLLocationManagerDelegate {
         return prefs.value(forKey: tipLatestUserLocation) == nil ? false : true
     }
     
+    private func setLatestLocationAsDefault(location: String) {
+        let prefs = UserDefaults.standard
+        NSLog("Setting %@ as latest user country location.", location)
+        prefs.set(location, forKey: tipLatestUserLocation)
+        prefs.synchronize()
+    }
+    
+    private func getLatestLocationFromUserDefaults() -> String {
+        let prefs = UserDefaults.standard
+        return prefs.value(forKey: tipLatestUserLocation) as! String
+    }
+    
     
     // MARK: - Public methods
     
     func getLatestCountry() -> String {
+        if self.latestCountry == nil {
+            self.latestCountry = getLatestLocationFromUserDefaults()
+        }
+        NSLog("Returning latest country: %@", latestCountry)
         return self.latestCountry
     }
 }

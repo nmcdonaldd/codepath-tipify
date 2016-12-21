@@ -23,3 +23,8 @@ let tipPercentage2 = 0.25
 // Mark: - Locations
 let tipDefaultUserLocation = "United States"
 let tipLatestUserLocation = "tipLatestUserLocation"
+
+let locations = [
+                "United States": "$",
+                "United Kingdom" : "£"
+                ]

@@ -11,7 +11,7 @@ import UIKit
 class tipManager: NSObject {
     
     static let sharedInstance: tipManager = tipManager()
-    private var locationManager: tipLocationManager
+    var locationManager: tipLocationManager
     
     private override init() {
         locationManager = tipLocationManager.sharedInstance
