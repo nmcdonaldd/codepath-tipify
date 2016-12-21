@@ -6,10 +6,10 @@
 //  Copyright © 2016 Nick McDonald. All rights reserved.
 //
 
-// Mark: - Logisitics
+// MARK: - Logisitics
 let tipFirstTimeAppLaunch = "tipFirstTimeAppLaunch"
 
-// Mark: - Magic Number Values
+// MARK: - Magic Number Values
 let tipAnimationDuration = 0.2
 let tipChangeInYForContainer = 175
 let tipChangeInYForSCAndTF = 100
@@ -20,7 +20,7 @@ let tipPercentage0 = 0.15
 let tipPercentage1 = 0.2
 let tipPercentage2 = 0.25
 
-// Mark: - Locations
+// MARK: - Locations
 let tipDefaultUserLocation = "United States"
 let tipLatestUserLocation = "tipLatestUserLocation"
 
