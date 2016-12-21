@@ -19,3 +19,7 @@ let tipHideAlpha = 0.0
 let tipPercentage0 = 0.15
 let tipPercentage1 = 0.2
 let tipPercentage2 = 0.25
+
+// Mark: - Locations
+let tipDefaultUserLocation = "United States"
+let tipLatestUserLocation = "tipLatestUserLocation"
