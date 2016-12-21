@@ -43,7 +43,7 @@ class tipViewController: UIViewController {
     
     func setPlaceHolderBasedOnLocation() {
         let country = self.locationManager.getLatestCountry()
-        self.dollarSignForLocation = locations[country]
+        self.dollarSignForLocation = locations[country] ?? locations[tipDefaultUserLocation]
         NSLog("Dollar localization of %@ is %@", country, self.dollarSignForLocation)
         
         self.totalBillTextField.placeholder = self.dollarSignForLocation
