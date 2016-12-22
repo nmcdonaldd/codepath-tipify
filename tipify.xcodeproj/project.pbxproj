@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D57AC1701E0C58870060CFA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57AC1721E0C58870060CFA2 /* Main.storyboard */; };
+		D57AC1731E0C58990060CFA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57AC1751E0C58990060CFA2 /* LaunchScreen.storyboard */; };
+		D57AC17A1E0C59110060CFA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D57AC17C1E0C59110060CFA2 /* Localizable.strings */; };
 		D58706831E0354300069322E /* tipAppFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706821E0354300069322E /* tipAppFeatures.swift */; };
 		D58706851E035DC60069322E /* tipKeyDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706841E035DC60069322E /* tipKeyDefinitions.swift */; };
 		D58706871E0477520069322E /* tipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706861E0477520069322E /* tipViewController.swift */; };
-		D59BB6151E09D21200CE4230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59BB6131E09D21200CE4230 /* LaunchScreen.storyboard */; };
-		D59BB6161E09D21200CE4230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59BB6141E09D21200CE4230 /* Main.storyboard */; };
 		D5CADD611E031CB700A6B96B /* tipAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */; };
 		D5CADD681E031CB700A6B96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CADD671E031CB700A6B96B /* Assets.xcassets */; };
 		D5CADD761E031CB800A6B96B /* tipifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD751E031CB800A6B96B /* tipifyTests.swift */; };
@@ -39,11 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D57AC1711E0C58870060CFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D57AC1741E0C58990060CFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D57AC1761E0C58C50060CFA2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D57AC1771E0C58C50060CFA2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		D57AC17B1E0C59110060CFA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D57AC17D1E0C59270060CFA2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D57AC17F1E0C59B20060CFA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		D57AC1811E0C59B80060CFA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D58706821E0354300069322E /* tipAppFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipAppFeatures.swift; path = Classes/General/tipAppFeatures.swift; sourceTree = "<group>"; };
 		D58706841E035DC60069322E /* tipKeyDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipKeyDefinitions.swift; path = "Supporting Files/tipKeyDefinitions.swift"; sourceTree = "<group>"; };
 		D58706861E0477520069322E /* tipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipViewController.swift; path = Classes/UI/tipViewController.swift; sourceTree = "<group>"; };
-		D59BB6131E09D21200CE4230 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Classes/UI/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D59BB6141E09D21200CE4230 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Classes/UI/Main.storyboard; sourceTree = "<group>"; };
 		D5CADD5D1E031CB700A6B96B /* tipify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = tipAppDelegate.swift; path = Classes/tipAppDelegate.swift; sourceTree = "<group>"; };
 		D5CADD671E031CB700A6B96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,8 +113,8 @@
 		D51DD7441E04B51F00174671 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D59BB6131E09D21200CE4230 /* LaunchScreen.storyboard */,
-				D59BB6141E09D21200CE4230 /* Main.storyboard */,
+				D57AC1751E0C58990060CFA2 /* LaunchScreen.storyboard */,
+				D57AC1721E0C58870060CFA2 /* Main.storyboard */,
 				D58706861E0477520069322E /* tipViewController.swift */,
 			);
 			name = UI;
@@ -116,6 +123,7 @@
 		D51DD7451E04B53800174671 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D57AC17C1E0C59110060CFA2 /* Localizable.strings */,
 				D58706841E035DC60069322E /* tipKeyDefinitions.swift */,
 			);
 			name = "Supporting Files";
@@ -273,6 +281,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = D5CADD541E031CB700A6B96B;
 			productRefGroup = D5CADD5E1E031CB700A6B96B /* Products */;
@@ -291,9 +300,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D59BB6161E09D21200CE4230 /* Main.storyboard in Resources */,
+				D57AC1701E0C58870060CFA2 /* Main.storyboard in Resources */,
+				D57AC17A1E0C59110060CFA2 /* Localizable.strings in Resources */,
 				D5CADD681E031CB700A6B96B /* Assets.xcassets in Resources */,
-				D59BB6151E09D21200CE4230 /* LaunchScreen.storyboard in Resources */,
+				D57AC1731E0C58990060CFA2 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,11 +368,47 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		D57AC1721E0C58870060CFA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D57AC1711E0C58870060CFA2 /* Base */,
+				D57AC1771E0C58C50060CFA2 /* fr */,
+				D57AC17F1E0C59B20060CFA2 /* en */,
+			);
+			name = Main.storyboard;
+			path = Classes/UI;
+			sourceTree = "<group>";
+		};
+		D57AC1751E0C58990060CFA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D57AC1741E0C58990060CFA2 /* Base */,
+				D57AC1761E0C58C50060CFA2 /* fr */,
+				D57AC1811E0C59B80060CFA2 /* en */,
+			);
+			name = LaunchScreen.storyboard;
+			path = Classes/UI;
+			sourceTree = "<group>";
+		};
+		D57AC17C1E0C59110060CFA2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D57AC17B1E0C59110060CFA2 /* en */,
+				D57AC17D1E0C59270060CFA2 /* fr */,
+			);
+			name = Localizable.strings;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		D5CADD831E031CB800A6B96B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -412,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

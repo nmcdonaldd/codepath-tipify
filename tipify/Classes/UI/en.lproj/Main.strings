@@ -1,0 +1,27 @@
+
+/* Class = "UISegmentedControl"; 3Ya-TZ-cC4.segmentTitles[0] = "15%"; ObjectID = "3Ya-TZ-cC4"; */
+"3Ya-TZ-cC4.segmentTitles[0]" = "15%";
+
+/* Class = "UISegmentedControl"; 3Ya-TZ-cC4.segmentTitles[1] = "20%"; ObjectID = "3Ya-TZ-cC4"; */
+"3Ya-TZ-cC4.segmentTitles[1]" = "20%";
+
+/* Class = "UISegmentedControl"; 3Ya-TZ-cC4.segmentTitles[2] = "25%"; ObjectID = "3Ya-TZ-cC4"; */
+"3Ya-TZ-cC4.segmentTitles[2]" = "25%";
+
+/* Class = "UINavigationItem"; title = "Tipify"; ObjectID = "B7e-Qb-nXW"; */
+"B7e-Qb-nXW.title" = "Tipify";
+
+/* Class = "UITextField"; placeholder = "$"; ObjectID = "DxJ-B5-UmH"; */
+"DxJ-B5-UmH.placeholder" = "$";
+
+/* Class = "UILabel"; text = "Tip"; ObjectID = "PFb-DC-45b"; */
+"PFb-DC-45b.text" = "Tip";
+
+/* Class = "UILabel"; text = "="; ObjectID = "fTg-FP-wL9"; */
+"fTg-FP-wL9.text" = "=";
+
+/* Class = "UILabel"; text = "$10"; ObjectID = "mW8-3R-5fY"; */
+"mW8-3R-5fY.text" = "$";
+
+/* Class = "UILabel"; text = "$100"; ObjectID = "pIE-de-zbY"; */
+"pIE-de-zbY.text" = "$";

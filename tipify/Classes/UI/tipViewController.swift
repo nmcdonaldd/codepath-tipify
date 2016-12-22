@@ -38,7 +38,9 @@ class tipViewController: UIViewController {
         self.manager = tipManager.sharedInstance
         self.locationManager = self.manager.locationManager
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.setPlaceHolderBasedOnLocation), name: NSNotification.Name(rawValue: tipLocationUpdatedKey), object: nil)
+        self.dollarSignForLocation = dollarSignsForCountry[tipDefaultUserLocation]
+        
+        //NotificationCenter.default.addObserver(self, selector: #selector(self.setPlaceHolderBasedOnLocation), name: NSNotification.Name(rawValue: tipLocationUpdatedKey), object: nil)
     }
     
     func setPlaceHolderBasedOnLocation() {

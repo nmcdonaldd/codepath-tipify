@@ -49,6 +49,7 @@ let dollarSignsForCountry = [
                             "Dominican Republic": "RD$",
                             "Egypt": "£",
                             "Falkland Islands": "£",
+                            "France": "€",
                             "Ghana": "¢",
                             "Gibraltar": "£",
                             "Guatemala": "Q",
