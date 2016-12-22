@@ -16,6 +16,9 @@
 		D5CADD681E031CB700A6B96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CADD671E031CB700A6B96B /* Assets.xcassets */; };
 		D5CADD761E031CB800A6B96B /* tipifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD751E031CB800A6B96B /* tipifyTests.swift */; };
 		D5CADD811E031CB800A6B96B /* tipifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CADD801E031CB800A6B96B /* tipifyUITests.swift */; };
+		D5DE33C51E0B0CB60021E123 /* tipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DE33C41E0B0CB60021E123 /* tipManager.swift */; };
+		D5DE33C81E0B0E1A0021E123 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DE33C71E0B0E1A0021E123 /* CoreLocation.framework */; };
+		D5DE33CA1E0B0E5A0021E123 /* tipLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DE33C91E0B0E5A0021E123 /* tipLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		D5CADD7C1E031CB800A6B96B /* tipifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CADD801E031CB800A6B96B /* tipifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipifyUITests.swift; sourceTree = "<group>"; };
 		D5CADD821E031CB800A6B96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DE33C41E0B0CB60021E123 /* tipManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipManager.swift; path = Classes/tipManager.swift; sourceTree = "<group>"; };
+		D5DE33C71E0B0E1A0021E123 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D5DE33C91E0B0E5A0021E123 /* tipLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipLocationManager.swift; path = Classes/tipLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DE33C81E0B0E1A0021E123 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +96,8 @@
 		D51DD7431E04B51C00174671 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D5DE33C41E0B0CB60021E123 /* tipManager.swift */,
+				D5DE33C91E0B0E5A0021E123 /* tipLocationManager.swift */,
 				D51DD7441E04B51F00174671 /* UI */,
 			);
 			name = Main;
@@ -119,6 +128,7 @@
 				D5CADD741E031CB800A6B96B /* tipifyTests */,
 				D5CADD7F1E031CB800A6B96B /* tipifyUITests */,
 				D5CADD5E1E031CB700A6B96B /* Products */,
+				D5DE33C61E0B0E1A0021E123 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +171,14 @@
 				D5CADD821E031CB800A6B96B /* Info.plist */,
 			);
 			path = tipifyUITests;
+			sourceTree = "<group>";
+		};
+		D5DE33C61E0B0E1A0021E123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5DE33C71E0B0E1A0021E123 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DE33CA1E0B0E5A0021E123 /* tipLocationManager.swift in Sources */,
 				D58706871E0477520069322E /* tipViewController.swift in Sources */,
+				D5DE33C51E0B0CB60021E123 /* tipManager.swift in Sources */,
 				D58706851E035DC60069322E /* tipKeyDefinitions.swift in Sources */,
 				D58706831E0354300069322E /* tipAppFeatures.swift in Sources */,
 				D5CADD611E031CB700A6B96B /* tipAppDelegate.swift in Sources */,

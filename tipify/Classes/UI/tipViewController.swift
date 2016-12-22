@@ -21,6 +21,10 @@ class tipViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     
+    private var manager: tipManager!
+    private var locationManager: tipLocationManager!
+    
+    private var dollarSignForLocation: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +34,20 @@ class tipViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.tipAndTotalView.alpha = CGFloat(tipHideAlpha)
         self.tipSegmentedControl.alpha = CGFloat(tipHideAlpha)
+        
+        self.manager = tipManager.sharedInstance
+        self.locationManager = self.manager.locationManager
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.setPlaceHolderBasedOnLocation), name: NSNotification.Name(rawValue: tipLocationUpdatedKey), object: nil)
     }
     
+    func setPlaceHolderBasedOnLocation() {
+        let country = self.locationManager.getLatestCountry()
+        self.dollarSignForLocation = dollarSignsForCountry[country] ?? dollarSignsForCountry[tipDefaultUserLocation]
+        NSLog("Dollar localization of %@ is %@", country, self.dollarSignForLocation)
+        
+        self.totalBillTextField.placeholder = self.dollarSignForLocation
+    }
     
     func keyboardShown(notification: Notification) {
         
@@ -91,8 +107,8 @@ class tipViewController: UIViewController {
         let tip = billTotal*tipPercentages[self.tipSegmentedControl.selectedSegmentIndex]
         let total = billTotal + tip
         
-        self.totalLabel.text = String(format: "$%.2f", total)
-        self.tipLabel.text = String(format: "$%.2f", tip)
+        self.totalLabel.text = String(format: "%@%.2f", self.dollarSignForLocation, total)
+        self.tipLabel.text = String(format: "%@%.2f", self.dollarSignForLocation, tip)
     }
 
     /*
