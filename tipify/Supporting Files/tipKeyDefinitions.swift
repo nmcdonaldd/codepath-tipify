@@ -6,8 +6,10 @@
 //  Copyright © 2016 Nick McDonald. All rights reserved.
 //
 
+
 // MARK: - Logisitics
 let tipFirstTimeAppLaunch = "tipFirstTimeAppLaunch"
+
 
 // MARK: - Magic Number Values
 let tipAnimationDuration = 0.2
@@ -20,11 +22,16 @@ let tipPercentage0 = 0.15
 let tipPercentage1 = 0.2
 let tipPercentage2 = 0.25
 
+
 // MARK: - Locations
 let tipDefaultUserLocation = "United States"
 let tipLatestUserLocation = "tipLatestUserLocation"
 
 let dollarSignsForCountry = [
                             "United States": "$",
-                            "United Kingdom" : "£"
+                            "United Kingdom": "£"
                             ]
+
+
+// MARK: - NSNotificationCenter Keys
+let tipLocationUpdatedKey = "tipLocationUpdated"

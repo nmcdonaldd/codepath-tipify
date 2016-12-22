@@ -61,6 +61,9 @@ class tipLocationManager: NSObject, CLLocationManagerDelegate {
         self.latestCountry = country
         NSLog("Current country is %@", country)
         self.setLatestLocationAsDefault(location: country)
+        
+        // Send the notification post
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: tipLocationUpdatedKey), object: nil)
     }
     
     private func setLatestLocationOnError() {
