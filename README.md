@@ -24,6 +24,9 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Using location-specific currency. When view loads, app locates the current country the user is in and uses that country's specific dollar/currency symbol.
+* [ ] Allow the user to specifiy whether they would want to use their location for locality, or the phone's location (current default).
+* [ ] Add more colors to the app for the user to choose from.
+* [ ] Not really a feature, but using Autolayout constraints.
 
 ## Video Walkthrough 
 
