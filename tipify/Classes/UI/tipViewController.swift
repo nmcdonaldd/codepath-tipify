@@ -115,11 +115,13 @@ class tipViewController: UIViewController, UITextFieldDelegate {
 	
 	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 		
+		var returnVal: Bool = true
+		
 		if (string == tipPeriodIdentifier && (self.totalBillTextField.text?.characters.contains(Character(tipPeriodIdentifier)))!) {
-			return false
+			returnVal = false
 		}
 		
-		return true
+		return returnVal
 	}
 
     /*
