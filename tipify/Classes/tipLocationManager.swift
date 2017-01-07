@@ -28,7 +28,8 @@ class tipLocationManager: NSObject, CLLocationManagerDelegate {
         NSLog("Starting to update user location")
         locationManager.startUpdatingLocation()
     }
-    
+	
+	
     // MARK: - CLLocationManagerDelegate
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

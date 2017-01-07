@@ -45,7 +45,7 @@
 		D59BB6131E09D21200CE4230 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Classes/UI/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D59BB6141E09D21200CE4230 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Classes/UI/Main.storyboard; sourceTree = "<group>"; };
 		D5CADD5D1E031CB700A6B96B /* tipify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipify.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = tipAppDelegate.swift; path = Classes/tipAppDelegate.swift; sourceTree = "<group>"; };
+		D5CADD601E031CB700A6B96B /* tipAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = tipAppDelegate.swift; path = Classes/tipAppDelegate.swift; sourceTree = "<group>"; usesTabs = 1; };
 		D5CADD671E031CB700A6B96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CADD6C1E031CB800A6B96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CADD711E031CB800A6B96B /* tipifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +131,7 @@
 				D5DE33C61E0B0E1A0021E123 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		D5CADD5E1E031CB700A6B96B /* Products */ = {
 			isa = PBXGroup;

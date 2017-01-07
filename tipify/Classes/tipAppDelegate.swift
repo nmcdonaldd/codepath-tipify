@@ -46,7 +46,8 @@ class tipAppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
+	
+	
     // MARK: - Helper functions
     
     func setUserDefaults() {
@@ -85,7 +86,5 @@ class tipAppDelegate: UIResponder, UIApplicationDelegate {
         })
         
     }
-
-
 }
 

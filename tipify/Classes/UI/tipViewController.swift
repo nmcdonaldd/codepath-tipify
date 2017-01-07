@@ -8,7 +8,7 @@
 
 import UIKit
 
-class tipViewController: UIViewController {
+class tipViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var totalBillTextField: UITextField!
     @IBOutlet weak var scAndBillTFView: UIView!
@@ -37,6 +37,8 @@ class tipViewController: UIViewController {
         
         self.manager = tipManager.sharedInstance
         self.locationManager = self.manager.locationManager
+		
+		self.totalBillTextField.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.setPlaceHolderBasedOnLocation), name: NSNotification.Name(rawValue: tipLocationUpdatedKey), object: nil)
     }
@@ -50,16 +52,15 @@ class tipViewController: UIViewController {
     }
     
     func keyboardShown(notification: Notification) {
-        
-        // Early return if the keyboard was already shown - don't need to go through logic again.
-        guard !previousShownKeyboard else {
-            return
-        }
-        
+		
+		if previousText {
+			return
+		}
+		
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             self.tipAndTotalView.frame.origin.y = keyboardSize.minY - keyboardSize.height
         }
-        
+		
         previousShownKeyboard = true
     }
 
@@ -110,6 +111,16 @@ class tipViewController: UIViewController {
         self.totalLabel.text = String(format: "%@%.2f", self.dollarSignForLocation, total)
         self.tipLabel.text = String(format: "%@%.2f", self.dollarSignForLocation, tip)
     }
+	
+	
+	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+		
+		if (string == tipPeriodIdentifier && (self.totalBillTextField.text?.characters.contains(Character(tipPeriodIdentifier)))!) {
+			return false
+		}
+		
+		return true
+	}
 
     /*
     // MARK: - Navigation

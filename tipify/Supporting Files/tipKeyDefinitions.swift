@@ -9,6 +9,7 @@
 
 // MARK: - Logisitics
 let tipFirstTimeAppLaunch = "tipFirstTimeAppLaunch"
+let tipPeriodIdentifier = "."
 
 
 // MARK: - Magic Number Values
